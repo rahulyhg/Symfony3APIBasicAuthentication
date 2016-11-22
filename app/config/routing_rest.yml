@@ -1,0 +1,3 @@
+Rest_Book:
+  type: rest
+  resource: "@AppBundle/Controller/BookController.php"
