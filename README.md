@@ -21,5 +21,5 @@ Example Symfony Api Rest with User Authentication HTTP Basic
 ## User Authentication with Curl 
 
 ```
-    $ curl -H 'content-type: application/json' -v -X GET http://127.0.0.1:8000/api/books  -H 'Authorization:Basic username:password'
+    $ curl -H 'content-type: application/json' -v -X GET http://127.0.0.1:8000/api/books  -H 'Authorization:Basic username:password or email:password' 
 ```
