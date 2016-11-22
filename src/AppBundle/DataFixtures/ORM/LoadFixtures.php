@@ -13,7 +13,7 @@ class LoadFixtures extends AbstractFixture implements ContainerAwareInterface
 {
 	private $container;
 
-	public function load(ObjectManager $manager)
+    public function load(ObjectManager $manager)
     {
         $this->loadUsers($manager);
     	$this->loadBooks($manager);
@@ -31,7 +31,7 @@ class LoadFixtures extends AbstractFixture implements ContainerAwareInterface
         $manager->flush();
     }
 
-	private function loadUsers(ObjectManager $manager)
+    private function loadUsers(ObjectManager $manager)
     {
         $passwordEncoder = $this->container->get('security.password_encoder');
         $userAdmin = new User();
