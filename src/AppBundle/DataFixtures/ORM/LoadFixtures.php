@@ -37,7 +37,6 @@ class LoadFixtures extends AbstractFixture implements ContainerAwareInterface
         $userAdmin = new User();
         $userAdmin->setUsername('tony_admin');
         $userAdmin->setEmail('tony_admin@symfony.com');
-        $userAdmin->setApiKey('37b51d194a7513e45b56f6524f2d51f2');
         $userAdmin->setRoles(['ROLE_API']);
         $encodedPassword = $passwordEncoder->encodePassword($userAdmin, 'admin');
         $userAdmin->setPassword($encodedPassword);
