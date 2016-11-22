@@ -11,7 +11,7 @@ use AppBundle\Entity\User;
 
 class LoadFixtures extends AbstractFixture implements ContainerAwareInterface
 {
-	private $container;
+    private $container;
 
     public function load(ObjectManager $manager)
     {
