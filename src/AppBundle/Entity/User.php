@@ -34,11 +34,6 @@ class User implements UserInterface
     private $email;
 
     /**
-     * @ORM\Column(type="string", unique=true)
-     */
-    private $apiKey;
-
-    /**
      * @ORM\Column(type="json_array")
      */
     private $roles = array();
@@ -125,30 +120,6 @@ class User implements UserInterface
         return $this->email;
     }
 
-    /**
-     * Set apiKey
-     *
-     * @param string $apiKey
-     *
-     * @return User
-     */
-    public function setApiKey($apiKey)
-    {
-        $this->apiKey = $apiKey;
-
-        return $this;
-    }
-
-    /**
-     * Get apiKey
-     *
-     * @return string
-     */
-    public function getApiKey()
-    {
-        return $this->apiKey;
-    }
-
     public function setRoles(array $roles)
     {
         $this->roles = $roles;
@@ -176,5 +147,4 @@ class User implements UserInterface
     {
 
     }
-
 }
