@@ -1,4 +1,4 @@
-# Symfony3 Api Rest Book
+# Symfony3ApiRestBook
 Example Symfony Api Rest with User Authentication HTTP Basic 
 
 ## Install with Composer
