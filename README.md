@@ -5,7 +5,7 @@ Example Symfony Api Rest with User Authentication HTTP Basic
 
 ```
     $ curl -s http://getcomposer.org/installer | php
-    $ php composer.phar install
+    $ php composer.phar install or composer install
 ```
 
 ## Getting with Curl 
