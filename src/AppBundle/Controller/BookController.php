@@ -17,6 +17,10 @@ class BookController extends FOSRestController
         $em = $this->getDoctrine()->getManager();
         $books = $em->getRepository(Book::class)->findAll();
 
+        if (!$books) {
+            throw new HttpException(400, "Invalid data");
+        }
+
         return $books;
     }
 
