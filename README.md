@@ -1,4 +1,7 @@
 # Symfony3ApiRestExample
+
+[![Build Status](https://travis-ci.org/Tony133/Symfony3ApiRestExample.svg?branch=master)](https://travis-ci.org/Tony133/Symfony3ApiRestExample)
+
 Example Symfony Api Rest with User Authentication HTTP Basic 
 
 ## Install with Composer
