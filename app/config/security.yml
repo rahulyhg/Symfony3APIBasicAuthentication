@@ -9,7 +9,7 @@ security:
     # http://symfony.com/doc/current/book/security.html#where-do-users-come-from-user-providers
     providers:
         api_user_provider:
-          id: api_user_provider
+          id: AppBundle\Security\User\ApiUserProvider
 
         database_users:
           entity: { class: AppBundle:User , property: username }
