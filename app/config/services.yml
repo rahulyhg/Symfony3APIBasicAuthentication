@@ -29,10 +29,5 @@ services:
         public: true
         tags: ['controller.service_arguments']
 
-#    service_name:
-#        class: AppBundle\Directory\ClassName
+#   AppBundle\Service\ExampleService:
 #        arguments: ["@another_service_name", "plain_value", "%parameter_name%"]
-    api_user_provider:
-        class: AppBundle\Security\User\ApiUserProvider
-        arguments: ['@doctrine.orm.entity_manager']
-
