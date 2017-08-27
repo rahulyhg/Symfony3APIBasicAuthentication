@@ -1,4 +1,4 @@
-# Symfony3ApiRestExample
+# Symfony3APIBasicAuthentication
 
 [![Build Status](https://travis-ci.org/Tony133/Symfony3ApiRestExample.svg?branch=master)](https://travis-ci.org/Tony133/Symfony3ApiRestExample)
 
