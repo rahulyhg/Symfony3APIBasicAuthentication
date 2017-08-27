@@ -1,5 +1,5 @@
 {
-    "name": "tony133/symfony3-api-rest-example",
+    "name": "tony133/symfony3-api-basic-authentication",
     "license": "MIT",
     "type": "project",
     "description": "Example Symfony Api Rest with User Authentication HTTP Basic",
