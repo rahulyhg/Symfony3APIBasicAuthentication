@@ -1,6 +1,6 @@
 # Symfony3APIBasicAuthentication
 
-[![Build Status](https://travis-ci.org/Tony133/Symfony3ApiRestExample.svg?branch=master)](https://travis-ci.org/Tony133/Symfony3ApiRestExample)
+[![Build Status](https://travis-ci.org/Tony133/Symfony3APIBasicAuthentication.svg?branch=master)](https://travis-ci.org/Tony133/Symfony3APIBasicAuthentication)
 
 Example Symfony 3.3 Api Rest with User Authentication HTTP Basic 
 
