@@ -6,6 +6,7 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
+use AppBundle\Entity\Book;
 
 class BookType extends AbstractType
 {
@@ -16,8 +17,8 @@ class BookType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('name', TextType::class, array('label'=> 'name'))
-            ->add('price', TextType::class, array('label'=> 'price'))
+            ->add('name', TextType::class, ['label'=> 'name'])
+            ->add('price', TextType::class, ['label'=> 'price'])
         ;
     }
 
@@ -26,10 +27,10 @@ class BookType extends AbstractType
      */
     public function configureOptions(OptionsResolver $resolver)
     {
-        $resolver->setDefaults(array(
-            'data_class' => 'AppBundle\Entity\Book',
+        $resolver->setDefaults([
+            'data_class' => Book::class,
             'csrf_protection'   => false,
-        ));
+        ]);
     }
 
     /**
