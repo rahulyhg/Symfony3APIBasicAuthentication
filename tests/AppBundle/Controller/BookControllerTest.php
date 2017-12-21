@@ -10,7 +10,7 @@ use GuzzleHttp\Psr7\Response;
 
 class BookControllerTest extends WebTestCase
 {
-	protected function setUp()
+    protected function setUp()
     {
         $mock = new MockHandler([new Response(200, [])]);
         $handler = HandlerStack::create($mock);
@@ -29,7 +29,7 @@ class BookControllerTest extends WebTestCase
         $response = $this->client->get('/api/books', [
             'auth' => [
             	'tony',
-				'123456'
+                '123456'
             ]
         ]);
 
@@ -41,7 +41,7 @@ class BookControllerTest extends WebTestCase
         $response = $this->client->get('/api/books/1', [
             'auth' => [
             	'tony',
-				'123456'
+                '123456'
             ]
         ]);
 
@@ -53,7 +53,7 @@ class BookControllerTest extends WebTestCase
         $response = $this->client->post('/api/books', [
             'auth' => [
                 'tony',
-				'123456'
+                '123456'
             ],
             'json' => [
                 'name'     => 'Foo bar',
@@ -69,7 +69,7 @@ class BookControllerTest extends WebTestCase
         $response = $this->client->put('/api/books/2', [
             'auth' => [
                 'tony',
-				'123456'
+                '123456'
             ],
             'json' => [
                 'name'     => 'Foo bar',
@@ -85,7 +85,7 @@ class BookControllerTest extends WebTestCase
         $response = $this->client->delete('/api/books/3', [
             'auth' => [
                 'tony',
-				'123456'
+                '123456'
             ]
         ]);
 
